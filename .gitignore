@@ -1,6 +1,6 @@
-.DS_Store
-.gemini/
-.antigravity/
-node_modules/
-dist/
-*.log
+# Ignore everything
+*
+
+# Except these
+!MY-ENGINEERING-PHILOSOPHY_v3.0.md
+!.gitignore
