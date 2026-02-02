@@ -3,4 +3,5 @@
 
 # Except these
 !MY-ENGINEERING-PHILOSOPHY_v3.0.md
+!README.md
 !.gitignore
