@@ -710,14 +710,14 @@ ChatGPT Atlas     复杂度判断        修复失败3次        Gemini架构师
 - **儿子/嫡长子** = 专业工具（CLI、IDE）
 - **智商/档位** = 模型类型（Sonnet、Haiku、Opus、GPT-4、GPT-3.5）
 
-**AI 家族谱系** (2026年2月最新):
+**AI 家族谱系** (2026年2月3日更新):
 
 | 家族角色 | 定义 | OpenAI 家族 | Google Gemini 家族 | Claude (Anthropic) 家族 |
 |---------|------|------------|-------------------|---------------------|
 | **父亲** | 网页版入口,面向大众,包含多模态、联网、记忆 | ChatGPT Plus (Web) | Gemini Advanced (Web) | Claude.ai (Web) |
-| **嫡长子** | 专业 IDE/平台,全能环境,集成 Agent 编排 | -(主要靠 Cursor 代理) | **Antigravity** (IDE)<br>(原 Project IDX 进化) | -(主要靠 Cursor 代理) |
+| **嫡长子** | 专业 IDE/桌面版,全能环境,集成 Agent 编排 | **Codex Desktop**<br>(macOS ARM 专属,削藩利器) | **Antigravity** (IDE)<br>(原 Project IDX 进化) | -(主要靠 Cursor 代理) |
 | **亲儿子** | 官方 CLI 工具,纯粹、极客、命令行交互 | Codex CLI / OpenAI CLI | Gemini CLI | Claude Code (CLI) |
-| **情报官** | 浏览器集成,主动抓取网页、分析DOM、Debug前端UI | **ChatGPT Atlas**<br>(Browser Extension) | - | - |
+| **情报官** | 浏览器集成,主动抓取网页、分析DOM、Debug前端UI | **ChatGPT Atlas**<br>(Browser Extension,macOS ARM 专属) | - | - |
 | **科学家** | 实验室/后台,参数可调,甚至免费,用于测试 Prompt | Playground | **AI Studio** | Console / Workbench |
 | **智商档位** | 模型分级 | GPT-5.2 (顶配/思考)<br>GPT-4o (快速/基准)<br>GPT-4.1 (经典/即将退役) | Gemini 3 Pro (顶配/思考)<br>Gemini 3 Flash (极速/显存大)<br>Gemini 2.5 (经典) | Sonnet 4.5 (平衡/高智商)<br>Opus 4.5 (慢/深思)<br>Haiku 4 (快) |
 | **中介** | 第三方集成 | **Cursor** (自助餐厅 - 可任意点餐,但属于"外包团队") | 同左 | 同左 |
@@ -830,6 +830,67 @@ Gemini: 生成修复提示词
 - 独立计算: 5小时/周 (高强度代码生成)
 - Review 额度: 拥有独立的 Code Review 免费配额,不占用生成额度 (隐藏福利)
 - 刷新机制: 每周一刷新,与网页版完全隔离
+
+**嫡长子 (Codex Desktop) 详解** (2026-02-03 更新):
+
+> **定位**: OpenAI 的"削藩利器",专为 macOS ARM 芯片打造的桌面版 IDE
+
+**平台限制**:
+- ⚠️ 目前仅支持 **macOS ARM** (Apple Silicon: M1/M2/M3/M4 系列)
+- 与 ChatGPT Atlas 浏览器同样的策略 - 优先服务高端用户
+
+**可用模型** (Model and Reasoning):
+
+主列表 (默认显示):
+- **GPT-5.2-Codex 系列**:
+  - GPT-5.2-Codex Medium
+  - GPT-5.2-Codex High
+  - GPT-5.2-Codex Extra High
+  
+- **GPT-5.2 系列** (非 Codex,对照用):
+  - GPT-5.2 Medium
+  - GPT-5.2 High
+  - GPT-5.2 Extra High
+
+More models (展开后):
+- **GPT-5.2-Codex Low** (低档,快速响应)
+- **GPT-5.2 Low** (非 Codex 低档)
+- **GPT-5.1-Codex-Max 系列**:
+  - GPT-5.1-Codex-Max Low
+  - GPT-5.1-Codex-Max Medium
+  - GPT-5.1-Codex-Max High
+  - GPT-5.1-Codex-Max Extra High ✅ (深度推理旗舰)
+  
+- **GPT-5.1-Codex-Mini 系列**:
+  - GPT-5.1-Codex-Mini Medium
+  - GPT-5.1-Codex-Mini High
+
+**Codex CLI 模型选择** (2026-02-03 更新):
+
+通过 `codex -m <model_name>` 或 `config.toml` 配置:
+
+1. **gpt-5.2-codex** (默认) - 最新前沿 Agentic 编码模型
+2. **gpt-5.2** - 最新前沿模型,知识/推理/编码全面提升
+3. **gpt-5.1-codex-max** (当前推荐) - Codex 优化旗舰,深度快速推理
+4. **gpt-5.1-codex-mini** - Codex 优化版,更便宜快速,但能力较弱
+
+**与 Claude Code CLI 对比** (2026-02-03):
+
+| 维度 | Codex CLI | Claude Code CLI |
+|------|-----------|-----------------|
+| **默认模型** | gpt-5.2-codex | Sonnet 4.5 |
+| **模型数量** | 4 个主要选项 + 多个子档位 | 2 个选项 (Sonnet/Haiku) |
+| **定价** | $3/$15 per Mtok (估算) | $3/$15 per Mtok |
+| **档位策略** | 细分档位 (Low/Medium/High/Extra High) | 简洁选择 (Sonnet/Haiku) |
+| **升级路径** | 通过 `-m` 参数切换 | `/upgrade` 或 `/extra-usage` |
+| **特色** | Codex 专精,多代际模型共存 | 简洁高效,Opus 需额外付费 |
+
+**典总评价**:
+- ✅ Codex Desktop 是 OpenAI 的"嫡长子"地位确认 - 削藩工具,收回 AI 编程统治权
+- ✅ 模型选择比 Claude Code 更丰富,但也更复杂
+- ✅ macOS ARM 独占策略与 Atlas 一致,体现"皇家御用终端"定位
+- ⚠️ 档位过多可能造成选择困难,建议默认使用 gpt-5.2-codex 或 gpt-5.1-codex-max
+
 
 ---
 
@@ -3220,6 +3281,18 @@ Level 3（Deliverable）：10%
 ---
 
 ## 📝 版本历史
+
+- **v3.1** (2026-02-04): OpenAI Codex Desktop 与 CLI 模型更新
+  - 更新 AI 家族谱系表 - 新增 Codex Desktop 作为 OpenAI "嫡长子"
+  - Codex Desktop 定位:"削藩利器",收回 AI 编程统治权
+  - 平台限制:仅支持 macOS ARM (Apple Silicon M1/M2/M3/M4)
+  - 新增 Codex Desktop 完整模型列表:
+    - GPT-5.2-Codex 系列 (Low/Medium/High/Extra High)
+    - GPT-5.1-Codex-Max 系列 (4个档位,深度推理旗舰)
+    - GPT-5.1-Codex-Mini 系列 (2个档位,快速经济)
+  - 新增 Codex CLI 模型选择详解 (gpt-5.2-codex / gpt-5.1-codex-max 等)
+  - 新增 Codex CLI vs Claude Code CLI 对比表
+  - 更新日期标注:2026年2月3日 (基于 Codex Desktop 发布信息)
 
 - **v3.0** (2026-02-03): 用户叙事方法论完整版 ⭐ 里程碑
   - 完整扩展 Little-Listener V1.9.1 "Big Eater" 案例
