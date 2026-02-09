@@ -1,7 +1,7 @@
 # 🏛️ 典总的工程哲学宪法
 ## MY-ENGINEERING-PHILOSOPHY.md
 
-> **Version 3.0** | 最后更新:2026-02-03
+> **Version 3.2** | 最后更新:2026-02-09
 > **作者**：典总（Alittle）| AI-Native Infrastructure Engineer
 > **核心身份**：Solution Architect，不是Coder
 
@@ -719,7 +719,7 @@ ChatGPT Atlas     复杂度判断        修复失败3次        Gemini架构师
 | **亲儿子** | 官方 CLI 工具,纯粹、极客、命令行交互 | Codex CLI / OpenAI CLI | Gemini CLI | Claude Code (CLI) |
 | **情报官** | 浏览器集成,主动抓取网页、分析DOM、Debug前端UI | **ChatGPT Atlas**<br>(Browser Extension,macOS ARM 专属) | - | - |
 | **科学家** | 实验室/后台,参数可调,甚至免费,用于测试 Prompt | Playground | **AI Studio** | Console / Workbench |
-| **智商档位** | 模型分级 | GPT-5.2 (顶配/思考)<br>GPT-4o (快速/基准)<br>GPT-4.1 (经典/即将退役) | Gemini 3 Pro (顶配/思考)<br>Gemini 3 Flash (极速/显存大)<br>Gemini 2.5 (经典) | Sonnet 4.5 (平衡/高智商)<br>Opus 4.5 (慢/深思)<br>Haiku 4 (快) |
+| **智商档位** | 模型分级 | **GPT-5.3-Codex** (2026-02-05 最新/自举训练)⭐<br>GPT-5.2 (顶配/思考)<br>GPT-4o (快速/基准)<br>GPT-4.1 (经典/即将退役) | Gemini 3 Pro (顶配/思考)<br>Gemini 3 Flash (极速/显存大)<br>Gemini 2.5 (经典) | **Opus 4.6** (2026-02-05 最新/1M context)⭐<br>Sonnet 4.5 (平衡/高智商)<br>Haiku 4 (快) |
 | **中介** | 第三方集成 | **Cursor** (自助餐厅 - 可任意点餐,但属于"外包团队") | 同左 | 同左 |
 
 **为什么网页版是"父亲"?**
@@ -890,6 +890,94 @@ More models (展开后):
 - ✅ 模型选择比 Claude Code 更丰富,但也更复杂
 - ✅ macOS ARM 独占策略与 Atlas 一致,体现"皇家御用终端"定位
 - ⚠️ 档位过多可能造成选择困难,建议默认使用 gpt-5.2-codex 或 gpt-5.1-codex-max
+
+---
+
+### 🚀 重大更新:2026年2月5日 - 两大巨头同日发布旗舰模型
+
+> **历史性时刻**: OpenAI 和 Anthropic 在同一天发布了各自的最强智能体编程模型
+
+#### GPT-5.3-Codex - OpenAI 的自举突破 ⭐
+
+**发布日期**: 2026-02-05
+
+**核心突破**:
+- 🔥 **自举训练** (Self-Bootstrapping): 首个在自身创建过程中发挥关键作用的模型
+  - 用于调试自身的训练过程
+  - 管理自身的部署
+  - 诊断测试结果与评估
+  
+- ⚡ **性能提升**: 
+  - 速度提升 **25%**
+  - 整合 GPT-5.2-Codex 的前沿编程性能
+  - 整合 GPT-5.2 的推理及专业知识能力
+
+- 🎯 **能力拓展**:
+  - 从"只能编写和审核代码"→"完成开发者在计算机上的一切工作"
+  - 支持研究、工具使用、复杂执行的长期运行任务
+  - 工作时可引导和交互,不丢失上下文
+
+**典总洞察**:
+- ✅ **自举训练**是 AI 发展的里程碑 - AI 开始训练 AI
+- ✅ 25% 速度提升意味着更低的 TCO (Total Cost of Ownership)
+- ✅ "完成开发者的一切工作"是对 Wrapper 生态的最后通牒
+- 🔮 预示着 AI 开发工具的终局形态
+
+---
+
+#### Claude Opus 4.6 - Anthropic 的全面升级 ⭐
+
+**发布日期**: 2026-02-05
+
+**核心突破**:
+- 📊 **1M Token Context Window** (Beta): Opus 系列首次支持百万级上下文
+  - 可处理超大型代码库
+  - 支持长期 Agentic 任务
+
+- 💻 **编程能力提升**:
+  - 更谨慎的规划
+  - 更长时间的智能体任务持续性
+  - 更大代码库中的可靠操作
+  - 更强的代码审查和调试能力(能发现自己的错误)
+
+- 🏆 **多项评测第一**:
+  - **Terminal-Bench 2.0**: Agentic 编程评测最高分
+  - **Humanity's Last Exam**: 复杂多学科推理测试领先
+  - **GDPval-AA**: 经济价值知识工作任务
+    - 超越 GPT-5.2 约 **144 Elo 点**
+    - 超越 Opus 4.5 约 **190 Elo 点**
+  - **BrowseComp**: 在线信息定位能力最强
+
+- 🛡️ **安全性**:
+  - 整体安全性与行业最佳水平持平或更优
+  - 低错误对齐行为率
+
+**典总洞察**:
+- ✅ **1M Context** 是游戏规则改变者 - 可以"吞下"整个大型项目
+- ✅ 在 GDPval-AA 上领先 GPT-5.2 **144 Elo** 说明在实际工作任务上更强
+- ✅ "能发现自己的错误"降低了红蓝对抗的成本
+- 🔮 Cowork 多任务自主能力是未来 AI 工作流的方向
+
+---
+
+#### 两大巨头对比 (2026-02-05)
+
+| 维度 | GPT-5.3-Codex (OpenAI) | Claude Opus 4.6 (Anthropic) |
+|------|------------------------|----------------------------|
+| **发布日期** | 2026-02-05 | 2026-02-05 |
+| **核心卖点** | 自举训练,25% 速度提升 | 1M context,多项评测第一 |
+| **定位** | 全能开发者智能体 | 知识工作 + 编程双强 |
+| **上下文窗口** | 未公布(推测与 GPT-5.2 相同) | **1M tokens** (Beta) ⭐ |
+| **速度** | 提升 25% | 未公布 |
+| **特色能力** | 自举训练,加速自身开发 | 超大代码库操作,自我纠错 |
+| **评测优势** | 未公布具体评测 | Terminal-Bench/GDPval-AA/BrowseComp 第一 |
+| **生态整合** | Codex Desktop/CLI | Cowork 多任务自主 |
+
+**战略意义**:
+- 🔥 **同日发布**不是巧合 - 两家公司都在抢占"AI 智能体编程"的制高点
+- 🎯 **OpenAI 强调速度和自举** - 工程效率优先
+- 🎯 **Anthropic 强调上下文和评测** - 能力边界优先
+- 🔮 **未来趋势**: AI 编程工具将从"代码生成"进化为"全栈开发智能体"
 
 
 ---
@@ -1193,6 +1281,394 @@ def test_fair_scheduling():
 - ✅ 代码质量更好(自动化测试 + 人工验收)
 
 **这就是为什么 Little-Listener 能在 7 天内完成 V1.0-V1.9 且质量达到 Level 2.5 的核心原因。**
+
+---
+
+### 🐧 Vibe Linuxing: AI-Native 基础设施工程
+
+> **典总的 AI-Native 基础设施工程方法论**  
+> 从 Vibe Coding (软件开发) 延伸到 Vibe Linuxing (系统工程)
+
+#### 核心理念
+
+**Vibe Linuxing** 不是传统的软件开发，而是 **AI 驱动的系统工程**：
+
+- ❌ 不写应用代码，**魔改系统**
+- ✅ 通过配置文件、Shell 脚本、systemd 服务来定制 Linux 系统
+- ✅ 交付物是**系统镜像**或**配置包**，而非源代码
+- ✅ 适用场景：网络网关、路由器、防火墙、DNS 服务器等基础设施
+
+**与 Vibe Coding 的区别**:
+
+| 维度 | Vibe Coding | Vibe Linuxing |
+|------|-------------|---------------|
+| **交付物** | 应用程序 (Python/JS/Go) | 系统配置 + 脚本 |
+| **核心技能** | 编程语言 | Linux 系统管理 |
+| **工具链** | IDE、编译器、包管理器 | Shell、systemd、iptables |
+| **测试方式** | 单元测试、集成测试 | 功能验证、网络抓包 |
+| **部署方式** | Docker、K8s | 裸金属、虚拟机 |
+
+---
+
+#### 完整工作流
+
+```mermaid
+graph TB
+    A[用户需求] --> B[Gemini 网页版<br>架构师]
+    B --> C[收集系统状态<br>system-status.txt]
+    C --> D[Gemini 分析<br>生成四段式提示词]
+    D --> E[本地 AI 执行<br>Codex/Claude/Gemini CLI]
+    E --> F[修改配置<br>重启服务]
+    F --> G[用户验证<br>功能测试]
+    G --> H{测试结果}
+    H -->|✅ 通过| I[生成文档<br>DEV_LOG + README]
+    H -->|❌ 失败| J[收集日志<br>Bug 分析]
+    J --> K{Bug 类型}
+    K -->|配置错误| E
+    K -->|架构问题| B
+    K -->|前端 UI| L[ChatGPT Atlas<br>DOM 分析]
+    L --> B
+    
+    style A fill:#e1f5ff
+    style B fill:#fff4e1
+    style E fill:#e7f5e7
+    style G fill:#ffe7e7
+    style I fill:#90EE90
+```
+
+**六阶段工作流**:
+
+1. **需求分析** (Gemini 网页版)
+   - 上传历史文档 (history.md, readme.md)
+   - 收集系统状态 (`uname -a`, `ip addr`, `systemctl status`)
+   - 描述需求或问题
+
+2. **方案设计** (Gemini 网页版)
+   - 根因分析
+   - 技术方案设计
+   - 生成四段式提示词
+
+3. **本地执行** (Ubuntu 本机 AI)
+   - Codex CLI / Claude Code / Gemini CLI
+   - 读取现有配置 (5秒睁眼原则)
+   - 执行修改、重启服务
+
+4. **用户验证** (典总)
+   - 功能测试 (`curl`, `dig`, `ping`)
+   - WebUI 检查
+   - 网络抓包 (`tcpdump`)
+
+5. **Bug 修复** (Gemini → 本机 AI)
+   - 收集日志 (`journalctl`)
+   - Gemini 分析根因
+   - 本地 AI 修复
+
+6. **文档生成** (本机 AI)
+   - 更新 DEV_LOG.md
+   - 更新 README.md
+   - 记录到 history.md
+
+---
+
+#### 实战案例: Dian-Gateway 网关项目
+
+> **项目背景**: 构建家庭网络网关，实现跨境网络加速、DNS 智能分流、广告过滤、AI 服务解锁
+
+**技术栈**:
+- **Mihomo** (Clash Meta 分支): TProxy 透明代理
+- **AdGuardHome**: DNS 服务器 + 广告过滤
+- **systemd**: 服务管理
+- **iptables**: 防火墙规则
+
+**开发时间线**:
+- 2026-02-06: Docker 容器化尝试 → **炸机**
+- 2026-02-06 晚: 弃用 Docker，迁移到裸金属
+- 2026-02-07: 实现 TProxy、解决 MTU/QUIC 问题、解锁 Gemini
+- 2026-02-07 晚: 发布 V10.0 "Gemini-Breaker"
+
+---
+
+#### 核心教训 1: Docker 的幻象与裸金属的觉醒
+
+**事件回顾**:
+
+Gemini 在 Phase 1 自作主张使用 Docker Compose 部署：
+
+```yaml
+version: '3'
+services:
+  mihomo:
+    image: metacubex/mihomo:latest
+    volumes:
+      - ./mihomo:/root/.config/mihomo
+    restart: always
+  
+  adguardhome:
+    image: adguard/adguardhome:latest
+    volumes:
+      - ./adguard/work:/opt/adguardhome/work
+    restart: always
+```
+
+**初步成果**: ✅ 服务快速启动，Web 界面可访问
+
+**崩溃点**: 修改 AdGuardHome 的 Web 登录密码后，容器重启导致配置丢失，**全家断网**
+
+**根本原因**:
+- Docker 卷挂载的权限问题
+- 配置文件的持久化逻辑不明确
+- 容器重启时状态管理失控
+
+**Gemini 的道歉**:
+
+> "我不应该在没有充分了解你的需求和环境的情况下，就自作主张选择 Docker。对于核心基础设施，**控制权 > 便捷性**。我们应该使用裸金属部署 + systemd 管理。"
+
+**返工方案**: 裸金属 + systemd
+
+```bash
+# 部署 Mihomo 二进制
+wget -O /usr/local/bin/mihomo https://github.com/MetaCubeX/mihomo/releases/download/v1.18.0/mihomo-linux-amd64
+chmod +x /usr/local/bin/mihomo
+
+# 创建 systemd 服务
+cat <<EOF > /etc/systemd/system/mihomo.service
+[Unit]
+Description=Mihomo Proxy Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/mihomo -d /etc/mihomo
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+systemctl daemon-reload
+systemctl enable mihomo
+systemctl start mihomo
+```
+
+**效果对比**:
+
+| 维度 | Docker 方案 | 裸金属方案 |
+|------|------------|-----------|
+| **启动速度** | 快 (5秒) | 中 (10秒) |
+| **配置持久化** | ❌ 不可靠 | ✅ 100% 可靠 |
+| **调试难度** | 高 (日志分散) | 低 (journalctl 统一) |
+| **网络性能** | 中 (多层 NAT) | 高 (无损耗) |
+| **控制权** | 低 (黑盒) | 高 (完全可见) |
+| **故障恢复** | 难 (状态丢失) | 易 (systemd 自愈) |
+
+**核心洞察**:
+
+> **控制权 > 便捷性**  
+> Docker 看起来很美（一键部署），但它是"黑盒"。当出现问题时，我们失去了对**状态 (State)** 的控制。  
+> **裸金属部署**虽然配置繁琐，但每一个进程、每一个配置文件、每一个 PID 都在我们眼皮底下。**只有看得见，才能救得活。**
+
+---
+
+#### 核心教训 2: 日志即真理
+
+**问题**: Gemini 能正常访问，但 NotebookLM 提示"所在地区不支持"
+
+**误区 1**: 以为是节点 IP 被封 → 切换多个节点，问题依旧
+
+**误区 2**: 以为是 DNS 泄露 → 检查 DNS 查询，确认走代理
+
+**破案关键**: 查看 AdGuardHome 的查询日志
+
+访问 `http://192.168.131.254:3000` → 查询日志，发现：
+
+```
+googleapis.cn → DIRECT (直连)
+```
+
+**真相大白**:
+1. Gemini 会请求 `googleapis.cn` 这个域名
+2. Mihomo 的规则中，`.cn` 域名默认走 `GEOIP,CN,DIRECT`
+3. 直连导致 Google 检测到真实 IP（深圳电信）
+4. 触发地区限制
+
+**解决方案**: 修改 Mihomo 配置，强制代理特定域名
+
+```yaml
+rules:
+  # ⚠️ 必须放在 GEOIP,CN,DIRECT 之前
+  - DOMAIN-SUFFIX,googleapis.cn,🚀 生产力 AI
+  - DOMAIN-SUFFIX,gemini.google.com,🚀 生产力 AI
+  - DOMAIN-SUFFIX,notebooklm.google.com,🚀 生产力 AI
+  
+  # ... 其他规则
+  - GEOIP,CN,DIRECT
+```
+
+**核心洞察**:
+
+> **日志即真理**  
+> 当陷入"玄学调试"（猜 MTU、猜节点、猜 DNS 污染）时，我们是盲目的。  
+> 直到打开 AdGuardHome 的查询日志，看到 `googleapis.cn → DIRECT` 的那一刻，**真相瞬间坍缩**。  
+> **不看日志的运维，就是在算命。**
+
+---
+
+#### 核心教训 3: 极简主义的鲁棒性
+
+**问题**: 网页加载极慢，Speedtest 测速无法完成，Google 搜索显示 **0 B/s**
+
+**根因分析**:
+
+1. **MTU 问题**: VPN 隧道增加包头，导致包被分片或丢弃
+2. **QUIC 问题**: Google 默认使用 QUIC (UDP over 443)，代理环境下 UDP 大包丢失严重
+
+**解决方案**: 极简主义的暴力美学
+
+```bash
+# 1. TCP MSS Clamping (自动调整包大小)
+iptables -t mangle -A POSTROUTING -p tcp --tcp-flags SYN,RST SYN \
+  -j TCPMSS --clamp-mss-to-pmtu
+
+# 2. Anti-QUIC (直接阻断 UDP 443)
+iptables -I FORWARD -p udp --dport 443 -j DROP
+```
+
+**效果**: 网速从 1-2 Mbps 提升到满速（100 Mbps）
+
+**核心洞察**:
+
+> **极简主义的鲁棒性**  
+> V10.0 脚本没有花里胡哨的 UI，只有几十行 `iptables` 和 `ip route`。  
+> 但它能自动识别网卡、自动钳制 MSS、自动清洗规则。**越简单的架构，越难被击倒。**
+
+---
+
+#### 核心教训 4: DNS 鸡生蛋死锁
+
+**问题**: 重启服务器后，前 5-10 分钟无网络，之后自动恢复
+
+**根因分析**:
+
+1. Mihomo 启动时需要解析节点域名（如 `sg1.example.com`）
+2. 系统 DNS 指向 AdGuardHome (127.0.0.1:53)
+3. AdGuardHome 的上游 DNS 是 Mihomo (127.0.0.1:1053)
+4. 但 Mihomo 还没启动完成，无法提供 DNS 服务
+5. 导致节点域名解析失败，Mihomo 启动卡住
+6. AdGuardHome 也无法获取上游，整个 DNS 系统死锁
+
+**解决方案**: Turbo-Boot 脚本
+
+```bash
+#!/bin/bash
+# /usr/local/bin/turbo-boot.sh
+
+echo "🚀 [Turbo] Network is online. Kickstarting services..."
+
+# 1. 强制时间同步（防止 SSL 证书验证失败）
+chronyc makestep > /dev/null 2>&1
+
+# 2. 刷新防火墙规则（防止规则丢失）
+/usr/local/bin/dian-network.sh > /dev/null 2>&1
+
+# 3. 按顺序重启服务
+systemctl restart mihomo
+sleep 2  # 等待 Mihomo 完全启动
+systemctl restart AdGuardHome
+
+echo "✅ [Turbo] Services restarted. Internet should be ready NOW."
+```
+
+创建 systemd 服务:
+
+```ini
+[Unit]
+Description=Dian Gateway Turbo Boot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/turbo-boot.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+```
+
+**效果**: 重启后 10 秒内网络恢复
+
+**核心洞察**:
+
+> **问题驱动的迭代**  
+> 每一个功能都是为了解决实际问题：  
+> - MTU 问题 → MSS Clamping  
+> - QUIC 问题 → UDP 443 阻断  
+> - DNS 死锁 → Turbo-Boot  
+> - 地区封锁 → 规则优先级  
+> **没有过度设计，只有必要的优化。**
+
+---
+
+#### Vibe Linuxing vs Vibe Coding 对比
+
+| 维度 | Vibe Coding | Vibe Linuxing |
+|------|-------------|---------------|
+| **典型案例** | Little-Listener | Dian-Gateway |
+| **交付物** | Python 应用 + WebUI | 系统配置 + Shell 脚本 |
+| **开发周期** | 7 天 (V1.0-V1.9) | 2 天 (Docker 炸机 → V10.0) |
+| **核心技能** | 编程 + 架构设计 | Linux 系统管理 + 网络工程 |
+| **AI 工具** | Gemini + Claude + Cursor | Gemini + Codex + Claude Code |
+| **测试方式** | 单元测试 + 浏览器测试 | 功能验证 + 网络抓包 |
+| **部署方式** | Streamlit WebUI | systemd 服务 |
+| **核心挑战** | 业务逻辑复杂度 | 系统状态管理 |
+| **失败案例** | (无重大返工) | Docker 炸机 → 裸金属重建 |
+
+---
+
+#### 最佳实践
+
+**DO ✅**:
+- ✅ 每次修改前，让 AI 先读取现有配置（5秒睁眼原则）
+- ✅ 收集完整的日志和系统状态 (`journalctl`, `ip addr`, `iptables -nL`)
+- ✅ 使用 tmux 管理多个窗口（AI Chat + 执行命令 + 日志监控）
+- ✅ 定期导出 history 和日志
+- ✅ 前端 UI Bug 用 ChatGPT Atlas 分析
+- ✅ 对于核心基础设施，优先选择裸金属部署
+
+**DON'T ❌**:
+- ❌ 不要让 AI 盲目修改配置
+- ❌ 不要在 Gemini 和本地 AI 之间反复切换
+- ❌ 不要忘记备份关键配置 (`/etc/mihomo`, `/opt/AdGuardHome/conf`)
+- ❌ 不要跳过用户验证环节
+- ❌ 不要在生产环境直接测试
+- ❌ 不要因为"便捷性"而牺牲"控制权"（Docker 教训）
+
+---
+
+#### 核心价值
+
+> **Vibe Linuxing = Vibe Coding 的系统工程延伸**
+
+**共同点**:
+- ✅ AI 驱动的开发流程
+- ✅ 用户叙事 → 架构师优化 → 四段式提示词
+- ✅ 红蓝对抗（不同 AI 审查）
+- ✅ 问题驱动的迭代
+
+**独特点**:
+- 🐧 交付物是**系统配置**而非应用代码
+- 🐧 核心技能是 **Linux 系统管理**而非编程
+- 🐧 测试方式是**功能验证 + 网络抓包**
+- 🐧 部署方式是 **systemd + 裸金属**
+
+**适用场景**:
+- 网络网关、路由器、防火墙
+- DNS 服务器、DHCP 服务器
+- VPN 服务器、代理服务器
+- 监控系统、日志收集系统
+
+**这就是为什么 Dian-Gateway 能在 2 天内从 Docker 炸机到 V10.0 稳定运行的核心原因。**
 
 ---
 
@@ -3282,6 +3758,33 @@ Level 3（Deliverable）：10%
 
 ## 📝 版本历史
 
+- **v3.2** (2026-02-09): 两大巨头同日发布旗舰模型 + Vibe Linuxing 方法论 ⭐
+  - **模型更新**:
+    - 更新 AI 家族谱系表"智商档位"行 - 新增 GPT-5.3-Codex 和 Opus 4.6
+    - **GPT-5.3-Codex** (OpenAI, 2026-02-05):
+      - 自举训练 (Self-Bootstrapping) - AI 训练 AI 的里程碑
+      - 速度提升 25%
+      - 从"代码工具"进化为"全栈开发智能体"
+    - **Claude Opus 4.6** (Anthropic, 2026-02-05):
+      - 1M Token Context Window (Beta) - Opus 系列首次
+      - Terminal-Bench 2.0 / GDPval-AA / BrowseComp 评测第一
+      - 超越 GPT-5.2 约 144 Elo 点 (经济价值知识工作任务)
+    - 新增"两大巨头对比"章节 - 战略意义分析
+    - 核心洞察:AI 编程工具从"代码生成"→"全栈开发智能体"
+  
+  - **Vibe Linuxing 方法论** (新增 ~400 行):
+    - 新增完整章节"Vibe Linuxing: AI-Native 基础设施工程"
+    - 从 Vibe Coding (软件开发) 延伸到 Vibe Linuxing (系统工程)
+    - 实战案例:**Dian-Gateway 网关项目** (2天完成,V10.0 "Gemini-Breaker")
+    - **四大核心教训**:
+      - 教训1: Docker 的幻象与裸金属的觉醒 (Gemini 返工事件)
+      - 教训2: 日志即真理 (googleapis.cn 地区封锁破案)
+      - 教训3: 极简主义的鲁棒性 (MTU/QUIC 性能优化)
+      - 教训4: DNS 鸡生蛋死锁 (Turbo-Boot 解决方案)
+    - 新增 Vibe Linuxing vs Vibe Coding 对比表
+    - 新增完整工作流 Mermaid 图
+    - 核心洞察:"控制权 > 便捷性"、"日志即真理"、"极简主义的鲁棒性"
+
 - **v3.1** (2026-02-04): OpenAI Codex Desktop 与 CLI 模型更新
   - 更新 AI 家族谱系表 - 新增 Codex Desktop 作为 OpenAI "嫡长子"
   - Codex Desktop 定位:"削藩利器",收回 AI 编程统治权
@@ -3409,7 +3912,7 @@ Level 3（Deliverable）：10%
 
 ---
 
-**最后更新**：2026-02-03
+**最后更新**：2026-02-09
 **作者**：典总（Alittle）
 **联系方式**：[待补充]
 
